@@ -19,6 +19,26 @@
       "Get the directory of the currently running script. \n\nThis is useful when you want to reference files relative to the script's location, regardless of the current working directory when the script is executed.",
     ],
   },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "case \"\\$${1:VAR}\" in",
+      "${2:1})",
+      "\techo 1",
+      "\t;;",
+      "${3:2 | 3})",
+      "\techo 2 or 3",
+      "\t;;",
+      "*)",
+      "\techo default",
+      "\t;;",
+      "esac",
+    ],
+    "description": [
+      "case word in [ [(] pattern [ | pattern ] ... ) list ;; ] ... esac\n",
+      "A case command first expands word, and tries to match it against each pattern in turn.",
+    ],
+  },
   "fori": {
     "prefix": "fori",
     "body": [
