@@ -1,5 +1,11 @@
 # Change Log
 
+## [0.0.5] - 2026-04-26
+
+### Added
+
+- feat: `forarray` - For loop over array elements
+
 ## [0.0.4] - 2026-04-26
 
 ### Added

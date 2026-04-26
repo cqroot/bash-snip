@@ -17,6 +17,7 @@ A Bash Code Snippets Extension.
 | `function`         | Define a function in Bash                         |
 | `case`             | Case statement for pattern matching              |
 | `fori`             | C-style for loop iterating N times                |
+| `forarray`         | For loop over array elements                      |
 | `readlinefile`     | Read a file line by line                          |
 | `readlinecommand`  | Read command output line by line                  |
 | `readlinevariable` | Read a variable content line by line              |
