@@ -2,8 +2,13 @@
 
 All notable changes to the "bash-snip" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [0.0.1] - 2026-04-26
 
-## [Unreleased]
+### Added
 
-- Initial release
+- feat: `#!/usr/bin/env` - Shebang template with script description
+- feat: `scriptdir` - Get the directory of the currently running script
+- feat: `fori` - C-style for loop iterating N times
+- feat: `readlinefile` - Read a file line by line
+- feat: `readlinecommand` - Read command output line by line
+- feat: `readlinevariable` - Read a variable content line by line
