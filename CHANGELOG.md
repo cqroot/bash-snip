@@ -1,6 +1,10 @@
 # Change Log
 
-All notable changes to the "bash-snip" extension will be documented in this file.
+## [0.0.4] - 2026-04-26
+
+### Added
+
+- feat: `function` - Define a function in Bash
 
 ## [0.0.3] - 2026-04-26
 

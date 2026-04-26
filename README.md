@@ -14,6 +14,7 @@ A Bash Code Snippets Extension.
 | ------------------ | ------------------------------------------------- |
 | `#!/usr/bin/env`   | Shebang template with script description          |
 | `scriptdir`        | Get the directory of the currently running script |
+| `function`         | Define a function in Bash                         |
 | `case`             | Case statement for pattern matching              |
 | `fori`             | C-style for loop iterating N times                |
 | `readlinefile`     | Read a file line by line                          |
