@@ -1,0 +1,66 @@
+{
+  "shebang": {
+    "prefix": "#!/usr/bin/env",
+    "body": [
+      "#!/usr/bin/env ${1:bash}",
+      "#",
+      "# ${2:Description of the script.}$0",
+    ],
+    "description": [
+      "Shebang to specify what shell is going to run the script by default. It includes a description of the script. \n\nIt must be defined in the first line of the script.\n\nBy using #!/usr/bin/env we are making the shebang portable, meaning it is going to work correctly even if the interpreter is not located under /usr/bin",
+    ],
+  },
+  "scriptdir": {
+    "prefix": "scriptdir",
+    "body": [
+      "readonly ${TM_FILENAME_BASE/(.*)/${1:/upcase}/g}_SH_DIR=\"\\$(cd -- \"\\$(dirname -- \"\\${BASH_SOURCE[0]}\")\" &>/dev/null && pwd)\"",
+    ],
+    "description": [
+      "Get the directory of the currently running script. \n\nThis is useful when you want to reference files relative to the script's location, regardless of the current working directory when the script is executed.",
+    ],
+  },
+  "fori": {
+    "prefix": "fori",
+    "body": [
+      "for ((i = 0; i < ${1:COUNT}; i++)); do",
+      "    echo \"\\${i}\"",
+      "done",
+    ],
+    "description": [
+      "A for loop that iterates a specified number of times. \n\nThe loop variable i starts at 0 and increments by 1 until it reaches COUNT.",
+    ],
+  },
+  "readlinefile": {
+    "prefix": "readlinefile",
+    "body": [
+      "while IFS= read -r line; do",
+      "    echo \"\\${line}\"",
+      "done <${1:FILENAME}",
+    ],
+    "description": [
+      "Read a file line by line using a while loop and the read command. \n\nThe IFS= is used to prevent leading/trailing whitespace from being trimmed, and the -r option prevents backslashes from being interpreted as escape characters.",
+    ],
+  },
+  "readlinecommand": {
+    "prefix": "readlinecommand",
+    "body": [
+      "while IFS= read -r line; do",
+      "    echo \"\\${line}\"",
+      "done < <(${1:COMMAND})",
+    ],
+    "description": [
+      "Read the output of a command line by line using a while loop and the read command. \n\nThe IFS= is used to prevent leading/trailing whitespace from being trimmed, and the -r option prevents backslashes from being interpreted as escape characters.",
+    ],
+  },
+  "readlinevariable": {
+    "prefix": "readlinevariable",
+    "body": [
+      "while IFS= read -r line; do",
+      "    echo \"\\${line}\"",
+      "done <<<\"${1:VARIABLE}\"",
+    ],
+    "description": [
+      "Read the content of a variable line by line using a while loop and the read command. \n\nThe IFS= is used to prevent leading/trailing whitespace from being trimmed, and the -r option prevents backslashes from being interpreted as escape characters.",
+    ],
+  },
+}

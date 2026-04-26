@@ -1,0 +1,21 @@
+{
+  "name": "bash-snip",
+  "displayName": "Bash Snip",
+  "publisher": "keith-chu",
+  "description": "A Bash Code Snippets Extension.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.116.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "shellscript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
