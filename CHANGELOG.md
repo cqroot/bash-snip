@@ -1,5 +1,11 @@
 # Change Log
 
+## [0.0.6] - 2026-04-27
+
+### Changed
+
+- chore: lower VS Code engine version to ^1.30.0 for broader compatibility
+
 ## [0.0.5] - 2026-04-26
 
 ### Added
