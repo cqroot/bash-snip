@@ -9,7 +9,7 @@
     "url": "https://github.com/cqroot/bash-snip.git"
   },
   "engines": {
-    "vscode": "^1.116.0"
+    "vscode": "^1.30.0"
   },
   "categories": [
     "Snippets"
